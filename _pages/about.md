@@ -7,36 +7,52 @@ selected_papers: false
 social: true 
 ---
 
+<style>
+  header.post-header { display: none !important; }
+</style>
+
 <div class="hero-universe">
   <div class="hero-content">
     <h1 class="hero-title">Welcome to my universe.</h1>
   </div>
   
-  <svg class="hero-tree" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <path d="M 80 100 Q 80 60 70 40 Q 60 20 40 10 Q 55 25 65 45 Q 70 60 75 100 Z" fill="currentColor"/>
-    <path d="M 70 40 Q 85 25 95 15 Q 85 30 75 45 Z" fill="currentColor"/>
-    <path d="M 65 45 Q 50 40 35 35 Q 45 45 60 55 Z" fill="currentColor"/>
+  <svg class="hero-tree-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="120" cy="180" rx="60" ry="10" fill="#a0b4c4" opacity="0.3" filter="blur(4px)"/>
+    
+    <path d="M100,200 C100,140 85,100 60,60 C75,85 90,120 95,150 C100,120 115,80 140,50 C120,75 105,110 105,150 C105,170 110,190 115,200 Z" fill="#2c3e50" opacity="0.9"/>
+    <path d="M95,150 C80,120 65,95 40,80 C55,95 70,120 85,140 Z" fill="#2c3e50" opacity="0.8"/>
+    
+    <circle cx="80" cy="70" r="40" fill="#ffb7c5" opacity="0.85" filter="blur(3px)"/>
+    <circle cx="130" cy="60" r="45" fill="#ff9eb5" opacity="0.75" filter="blur(4px)"/>
+    <circle cx="105" cy="35" r="35" fill="#ffa6b9" opacity="0.8" filter="blur(3px)"/>
+    <circle cx="145" cy="95" r="30" fill="#ffb7c5" opacity="0.7" filter="blur(2px)"/>
+    <circle cx="55" cy="100" r="30" fill="#ffc2d1" opacity="0.8" filter="blur(3px)"/>
+    <circle cx="100" cy="80" r="45" fill="#ff8da1" opacity="0.65" filter="blur(5px)"/>
+    <circle cx="120" cy="120" r="25" fill="#ffb7c5" opacity="0.7" filter="blur(2px)"/>
   </svg>
 
-  <div class="leaf leaf-1"></div>
-  <div class="leaf leaf-2"></div>
-  <div class="leaf leaf-3"></div>
-  <div class="leaf leaf-4"></div>
+  <div class="petal petal-1"></div>
+  <div class="petal petal-2"></div>
+  <div class="petal petal-3"></div>
+  <div class="petal petal-4"></div>
+  <div class="petal petal-5"></div>
+  <div class="petal petal-6"></div>
 </div>
 
 <style>
   .hero-universe {
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    margin-top: -2rem;
-    margin-bottom: 3rem;
-    background: var(--global-bg-color);
-    border-bottom: 1px dotted var(--global-divider-color);
+    margin-top: 0;
+    margin-bottom: 4rem;
+    /* The "Bluish Squish" gradient background */
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -48,49 +64,54 @@ social: true
   }
   
   .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: var(--global-text-color);
+    font-size: 4rem;
+    font-weight: 800;
+    color: #2c3e50;
     letter-spacing: -0.05rem;
+    text-shadow: 2px 2px 10px rgba(255,255,255,0.5); /* Helps text stand out */
   }
 
-  .hero-tree {
+  /* SVG Tree Positioning */
+  .hero-tree-svg {
     position: absolute;
     right: 5vw;
-    bottom: 0;
-    height: 85%;
+    bottom: -5vh;
+    height: 100%;
     width: auto;
-    color: var(--global-text-color);
-    opacity: 0.15; /* Kept very subtle so it acts as a background */
+    z-index: 5;
   }
 
-  /* Leaf Geometry and Animation */
-  .leaf {
+  /* Petal Geometry and Animation */
+  .petal {
     position: absolute;
-    width: 12px;
-    height: 12px;
-    background-color: var(--global-theme-color);
-    border-radius: 0 100% 0 100%;
+    width: 14px;
+    height: 14px;
+    background: #ffb7c5;
+    border-radius: 15px 0 15px 0;
     opacity: 0;
-    right: 15vw;
-    bottom: 25vh;
+    z-index: 6;
+    box-shadow: 0 0 6px rgba(255,183,197,0.8);
   }
 
-  .leaf-1 { animation: blowLeft 8s linear infinite; animation-delay: 0s; }
-  .leaf-2 { animation: blowLeft 10s linear infinite; animation-delay: 2s; bottom: 35vh; right: 12vw;}
-  .leaf-3 { animation: blowLeft 7s linear infinite; animation-delay: 4s; bottom: 30vh; right: 10vw;}
-  .leaf-4 { animation: blowLeft 9s linear infinite; animation-delay: 6s; bottom: 40vh; right: 18vw;}
+  /* Continuous looping wind effect from Right to Left */
+  .petal-1 { animation: driftLeft 12s linear infinite; animation-delay: 0s; right: 25vw; bottom: 40vh; }
+  .petal-2 { animation: driftLeft 15s linear infinite; animation-delay: 3s; right: 15vw; bottom: 30vh; background: #ff9eb5; }
+  .petal-3 { animation: driftLeft 10s linear infinite; animation-delay: 6s; right: 20vw; bottom: 50vh; }
+  .petal-4 { animation: driftLeft 14s linear infinite; animation-delay: 1s; right: 10vw; bottom: 25vh; width: 10px; height: 10px; }
+  .petal-5 { animation: driftLeft 11s linear infinite; animation-delay: 8s; right: 18vw; bottom: 45vh; background: #ff9eb5; }
+  .petal-6 { animation: driftLeft 13s linear infinite; animation-delay: 4s; right: 22vw; bottom: 35vh; width: 18px; height: 18px; }
 
-  @keyframes blowLeft {
+  @keyframes driftLeft {
     0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
-    10% { opacity: 0.6; }
-    80% { opacity: 0.6; }
-    100% { transform: translate(-70vw, 15vh) rotate(720deg); opacity: 0; }
+    15% { opacity: 0.9; }
+    85% { opacity: 0.9; }
+    100% { transform: translate(-80vw, 15vh) rotate(720deg); opacity: 0; }
   }
 
+  /* Mobile responsiveness */
   @media (max-width: 768px) {
-    .hero-title { font-size: 2rem; }
-    .hero-tree { right: -10vw; height: 70%; opacity: 0.1; }
+    .hero-title { font-size: 2.5rem; }
+    .hero-tree-svg { right: -15vw; height: 75%; opacity: 0.8; }
   }
 </style>
 
