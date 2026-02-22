@@ -6,9 +6,9 @@ first_name: Agastya
 middle_name: 
 last_name: Agrawal
 contact_note: >
-  Feel free to reach out for any collaborations or questions.
+  Feel free to reach out for any collaboration or research opportunities.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-I am currently a second year undergraduate at Chennai Mathematical Institute, pursuing my Bachelors of Science in Mathematics and Computer Science.
+  I am currently a second year undergraduate at Chennai Mathematical Institute pursuing my Bachelors in Mathematics and Computer Science. 
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
