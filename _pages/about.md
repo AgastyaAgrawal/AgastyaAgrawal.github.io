@@ -2,15 +2,12 @@
 layout: about
 title: Home
 permalink: /
-news: false 
-selected_papers: false 
-social: true 
 ---
 
 <style>
+  /* Hide default header */
   header.post-header { display: none !important; }
   
-  /* 1. THE HERO (Top Half) */
   .hero-universe {
     width: 100vw;
     height: 45vh; 
@@ -21,7 +18,6 @@ social: true
     margin-right: -50vw;
     margin-top: -3.5rem; 
     margin-bottom: 2rem;
-    background-image: url('{{ "/assets/img/sakura.jpg" | relative_url }}');
     background-size: cover;
     background-position: center center; 
     overflow: hidden;
@@ -49,18 +45,17 @@ social: true
     color: var(--global-text-color);
   }
 
-  /* 2. THE INTRO SECTION (Side-by-Side) */
   .intro-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .intro-text {
     flex: 2;
-    font-size: 1.15rem; /* Larger font size */
+    font-size: 1.2rem;
     line-height: 1.6;
   }
 
@@ -71,44 +66,34 @@ social: true
 
   .intro-image {
     width: 100%;
-    max-width: 300px;
-    border-radius: 12px;
+    max-width: 280px;
+    border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   }
 
   .section-heading {
     font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid var(--global-theme-color);
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--global-theme-color);
     display: inline-block;
   }
 
-  .read-more-btn {
+  .action-link {
     display: inline-block;
     margin-top: 1rem;
-    padding: 8px 20px;
-    background: var(--global-theme-color);
-    color: white !important;
-    border-radius: 5px;
+    font-weight: 700;
+    color: var(--global-theme-color) !important;
     text-decoration: none;
-    font-weight: 600;
+    border-bottom: 2px solid transparent;
     transition: 0.3s;
   }
 
-  .read-more-btn:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
+  .action-link:hover {
+    border-bottom: 2px solid var(--global-theme-color);
   }
 
-  /* 3. BLOG PREVIEW SECTION */
-  .featured-blogs {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--global-divider-color);
-  }
-
-  /* Petal Styles remain same as your previous working version */
+  /* Petal Styles */
   .petal { position: absolute; background: #ffb7c5; border-radius: 15px 0 15px 0; opacity: 0; z-index: 6; }
   @keyframes driftLeft {
     0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
@@ -118,21 +103,21 @@ social: true
   }
 </style>
 
-<div class="hero-universe">
+<div class="hero-universe" style="background-image: url('{{ '/assets/img/sakura.jpg' | relative_url }}');">
   <div class="hero-overlay"></div>
   <h1 class="hero-title">Welcome to my universe.</h1>
-  <div class="petal petal-1" style="animation: driftLeft 18s linear infinite; right: 10vw; bottom: 35vh;"></div>
-  <div class="petal petal-2" style="animation: driftLeft 22s linear infinite; right: -5vw; bottom: 20vh;"></div>
-  <div class="petal petal-3" style="animation: driftLeft 16s linear infinite; right: 15vw; bottom: 40vh;"></div>
+  <div class="petal" style="width: 12px; height: 12px; animation: driftLeft 18s linear infinite; right: 10vw; bottom: 35vh;"></div>
+  <div class="petal" style="width: 14px; height: 14px; animation: driftLeft 22s linear infinite; right: 5vw; bottom: 20vh;"></div>
+  <div class="petal" style="width: 10px; height: 10px; animation: driftLeft 16s linear infinite; right: 15vw; bottom: 40vh;"></div>
 </div>
 
 <div class="intro-container">
   <div class="intro-text">
     <h2 class="section-heading">About Me</h2>
     <p>Hi, I'm Agastya. I am an undergraduate at the <strong>Chennai Mathematical Institute (CMI)</strong>, specializing in mathematics and computer science.</p>
-    <p>My research focuses on <strong>AI alignment</strong> and <strong>mechanistic interpretability</strong>—specifically uncovering deceptive chain-of-thought in fine-tuned language models. I enjoy applying probability and statistics to explore complex systems in ML and financial markets.</p>
+    <p>My research focuses on <strong>AI alignment</strong> and <strong>mechanistic interpretability</strong>—specifically uncovering deceptive chain-of-thought in fine-tuned language models.</p>
     
-    <a href="{{ '/about/' | relative_url }}" class="read-more-btn">Full Story →</a>
+    <a href="{{ '/about/' | relative_url }}" class="action-link">Read the full story →</a>
   </div>
   
   <div class="intro-image-wrapper">
@@ -140,13 +125,20 @@ social: true
   </div>
 </div>
 
-<div class="featured-blogs">
-  <h2 class="section-heading">Writing & Research</h2>
-  <p>I write about my latest experiments in AI safety and mathematics. You can find my front-page LessWrong posts and technical notes here.</p>
+<hr>
+
+<div class="blog-preview" style="margin-top: 3rem;">
+  <h2 class="section-heading">Latest Writing</h2>
+  <p>Exploring the intersections of probability, statistics, and AI safety.</p>
   
-  <div class="news">
-    {% include news.html limit=3 %}
+  <div style="margin-top: 1.5rem;">
+    {% for post in site.posts limit:3 %}
+      <div style="margin-bottom: 1rem;">
+        <a href="{{ post.url | relative_url }}" style="font-size: 1.3rem; font-weight: 600;">{{ post.title }}</a>
+        <p style="font-size: 0.95rem; color: #666;">{{ post.date | date: "%b %-d, %Y" }}</p>
+      </div>
+    {% endfor %}
   </div>
   
-  <a href="{{ '/blog/' | relative_url }}" class="read-more-btn">View All Posts →</a>
+  <a href="{{ '/blog/' | relative_url }}" class="action-link">Visit the blog →</a>
 </div>
