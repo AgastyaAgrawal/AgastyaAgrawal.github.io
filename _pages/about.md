@@ -91,7 +91,7 @@ social: true
     margin-bottom: 2rem;
   }
 
-  /* Overrides default theme purple links to a cherry rose */
+  /* Cherry Rose color for links */
   .profile-content a {
     color: #c94c6d; 
     text-decoration: none;
@@ -104,19 +104,26 @@ social: true
     text-decoration: underline;
   }
 
-  /* Highlight text override so it matches your custom color */
+  /* Custom highlight color */
   .profile-content ::selection {
     background: rgba(201, 76, 109, 0.3);
   }
 
-.profile-pic {
+  /* UPDATED: Centers the image horizontally in its column */
+  .profile-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  /* UPDATED: Larger size, sharp corners, 4:3 aspect ratio */
+  .profile-pic {
     width: 100%;
-    max-width: 380px; /* Made it a bit wider */
-    aspect-ratio: 4 / 3; /* Forces a landscape shape (width > height) */
-    object-fit: cover; /* Crops perfectly without distorting the image */
+    max-width: 500px; /* Greatly increased width for magnification */
+    aspect-ratio: 4 / 3; /* Professional landscape rectangle */
+    object-fit: cover; /* Crops intelligently to fill the box */
     border-radius: 0; /* Sharp corners */
     box-shadow: 0 8px 25px rgba(0,0,0,0.08); 
-    margin-top: 5px; /* Aligns the top of the image with the top of the text */
     transition: transform 0.3s ease;
   }
 
@@ -138,7 +145,6 @@ social: true
     [data-theme="dark"] .hero-overlay { background: linear-gradient(to right, var(--global-bg-color) 0%, rgba(30,30,30,0.9) 40%, transparent 100%); }
     
     .profile-pic-container {
-      text-align: center;
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
@@ -166,8 +172,8 @@ social: true
 
 <div class="row clearfix profile-content">
   
-  <div class="col-sm-8 profile-text">
-    <p>Hi, I'm Agastya. I am an undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank">Chennai Mathematical Institute (CMI)</a>, specializing in mathematics and computer science.</p> 
+  <div class="col-sm-7 profile-text">
+    <p>Hi, I'm Agastya. I am an undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank">Chennai Mathematical Institute</a>, pursuing my bachelors in mathematics and computer science.</p> 
 
     <p>My research interests lie heavily in <strong>AI alignment</strong> and <strong>interpreting AI</strong>. I am currently focused on understanding deceptive chain-of-thought in fine-tuned language models—specifically using techniques like PCA and cosine similarity to find "truth directions" in activation spaces. Additionally, I am interested in the applications of probability and statistics in fields like ML and financial markets.</p>
 
@@ -176,7 +182,7 @@ social: true
     <p><em>I am actively seeking a summer 2026 research internship in machine learning and AI alignment.</em></p>
   </div>
 
-  <div class="col-sm-4 profile-pic-container">
+  <div class="col-sm-5 profile-pic-container">
     <img src="{{ '/assets/img/my_photo.jpg' | relative_url }}" alt="Agastya Agrawal" class="img-fluid profile-pic">
   </div>
   
