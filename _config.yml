@@ -9,8 +9,8 @@ last_name: Agrawal
 # Contact information
 email: agastya.agr@gmail.com
 linkedin_userid: agastyaagrawal
-google_scholar_userid: ""
-rss_icon: false
+google_scholar_userid:
+rss_icon:
 
 contact_note: >
   Feel free to reach out for any collaboration or research opportunities.
