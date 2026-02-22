@@ -85,28 +85,78 @@ social: true
     100% { transform: translate(-85vw, 15vh) rotate(720deg); opacity: 0; }
   }
 
-  /* --- PROFILE & WIDE LAYOUT STYLES --- */
+  /* --- TYPOGRAPHY & LINKS --- */
+  .home-section {
+    margin-bottom: 4rem;
+  }
+
+  .home-section h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--global-text-color);
+  }
+
+  .home-section p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Standard text links */
+  .home-section a.text-link {
+    color: #c94c6d; 
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    font-weight: 500;
+  }
   
-  /* Widen the container into the margins */
+  .home-section a.text-link:hover {
+    color: #a03b55;
+    text-decoration: underline;
+  }
+
+  /* Call to action links below sections */
+  .section-cta {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #c94c6d;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  .section-cta:hover {
+    color: #a03b55;
+    text-decoration: none;
+    border-bottom: 2px solid #a03b55;
+  }
+
+  .home-section ::selection {
+    background: rgba(201, 76, 109, 0.3);
+  }
+
+  /* --- PROFILE HEADER LAYOUT --- */
   .profile-content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 3rem; 
+    gap: 5rem; /* Increased gap to push the image further right */
     margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 124%;         /* Breaks out of standard width */
-    margin-left: -12%;   /* Shifts it left into the margin */
+    width: 124%;         
+    margin-left: -12%;   
   }
 
   .profile-text {
-    flex: 1.6; /* Gives the text portion more room so lines stay long */
+    flex: 1.5; 
   }
 
   .profile-pic-container {
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* Pushes the image to the far right */
+    justify-content: flex-end; 
   }
 
   .profile-pic {
@@ -123,30 +173,7 @@ social: true
     transform: translateY(-5px);
   }
 
-  /* Cherry Rose color for links */
-  .profile-text a {
-    color: #c94c6d; 
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-    font-weight: 500;
-  }
-  
-  .profile-text a:hover {
-    color: #a03b55;
-    text-decoration: underline;
-  }
-
-  .profile-text ::selection {
-    background: rgba(201, 76, 109, 0.3);
-  }
-
-  .profile-text p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 1.2rem;
-  }
-
-  /* Mobile & Tablet responsiveness (resets margins so it doesn't break small screens) */
+  /* Mobile & Tablet responsiveness */
   @media (max-width: 992px) {
     .profile-content {
       flex-direction: column;
@@ -159,8 +186,6 @@ social: true
     }
     .hero-title { font-size: 2.8rem; }
     .hero-universe { height: 40vh; margin-top: -2rem; background-position: 70% center; }
-    .hero-overlay { background: linear-gradient(to right, var(--global-bg-color) 0%, rgba(255,255,255,0.9) 40%, transparent 100%); }
-    [data-theme="dark"] .hero-overlay { background: linear-gradient(to right, var(--global-bg-color) 0%, rgba(30,30,30,0.9) 40%, transparent 100%); }
   }
 </style>
 
@@ -183,20 +208,36 @@ social: true
   <div class="petal petal-10"></div>
 </div>
 
-<div class="profile-content">
-  
-  <div class="profile-text">
-    <p>Hi, I'm Agastya. I am an undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank">Chennai Mathematical Institute (CMI)</a>, pursuing my bachelors in mathematics and computer science.</p> 
+<div class="home-section">
 
+  <div class="profile-content home-section">
+    <div class="profile-text">
+      <p>Hi, I'm Agastya. I am an undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank" class="text-link">Chennai Mathematical Institute (CMI)</a>, pursuing my bachelors in mathematics and computer science.</p> 
+
+      <p><em>I am actively seeking a summer 2026 research internship in machine learning and AI alignment.</em></p>
+
+      <a href="{{ '/cv/' | relative_url }}" class="section-cta">View my full CV &rarr;</a>
+    </div>
+
+    <div class="profile-pic-container">
+      <img src="{{ '/assets/img/my_photo.jpg' | relative_url }}" alt="Agastya Agrawal" class="profile-pic">
+    </div>
+  </div>
+
+  <div class="home-section">
+    <h2>Research</h2>
     <p>My research interests lie heavily in <strong>AI alignment</strong> and <strong>interpreting AI</strong>. I am currently focused on understanding deceptive chain-of-thought in fine-tuned language models—specifically using techniques like PCA and cosine similarity to find "truth directions" in activation spaces. Additionally, I am interested in the applications of probability and statistics in fields like ML and financial markets.</p>
 
-    <p>I recently published independent research on <a href="https://www.lesswrong.com/" target="_blank">Uncovering Unfaithful CoT in Deceptive Models</a> which was featured on the front page of LessWrong. Currently, I am working through the ARENA curriculum to further sharpen my research engineering skills.</p>
+    <p>I recently published independent research on <a href="https://www.lesswrong.com/" target="_blank" class="text-link">Uncovering Unfaithful CoT in Deceptive Models</a> which was featured on the front page of LessWrong. Currently, I am working through the ARENA curriculum to further sharpen my research engineering skills.</p>
 
-    <p><em>I am actively seeking a summer 2026 research internship in machine learning and AI alignment.</em></p>
+    <a href="{{ '/publications/' | relative_url }}" class="section-cta">View my publications &rarr;</a>
   </div>
 
-  <div class="profile-pic-container">
-    <img src="{{ '/assets/img/my_photo.jpg' | relative_url }}" alt="Agastya Agrawal" class="profile-pic">
+  <div class="home-section">
+    <h2>Blog</h2>
+    <p>I actively document my experiments, engineering deep-dives, and thoughts on AI alignment. This is where I share technical walkthroughs, notes from my ARENA curriculum progress, and raw ideas as they develop.</p>
+
+    <a href="{{ '/blog/' | relative_url }}" class="section-cta">Read my blog &rarr;</a>
   </div>
-  
+
 </div>
