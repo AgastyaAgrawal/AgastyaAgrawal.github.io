@@ -143,7 +143,7 @@ social: true
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 5rem; /* Increased gap to push the image further right */
+    gap: 5rem; 
     margin-top: 2rem;
     width: 124%;         
     margin-left: -12%;   
@@ -212,9 +212,9 @@ social: true
 
   <div class="profile-content home-section">
     <div class="profile-text">
-      <p>Hi, Hi, I am Agastya Agrawal, a second year undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank" class="text-link">Chennai Mathematical Institute </a>, pursuing my bachelors in mathematics and computer science.</p> I am passionate about interpreting Artifical Intelligence for the progess towards safe superintelligence. I am also particularly interested in looking at neural networks from the lens of mathematics, and am in general also interested in other applications of Mathematics in understanding real-world structures. Please head to my blog or research section to learn more!
+      <p>Hi! I am Agastya Agrawal, a second-year undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank" class="text-link">Chennai Mathematical Institute</a>, pursuing my bachelor's in mathematics and computer science. I am passionate about interpreting artificial intelligence to help drive progress toward safe superintelligence. I particularly enjoy analyzing neural networks through a rigorous mathematical lens, and I am interested in applying mathematics, probability, and statistics to understand complex real-world structures. Please head to my blog or research section to learn more!</p>
 
-      <p><em>I am open to collaboration over the above topics, so please feel free to reach out to me regarding anything related to it! I am also available to chat if you would like to discuss anything, so do not hesitate to contact me!</em></p>
+      <p><em>I am always open to collaborations or discussions about these topics, so please don't hesitate to reach out!</em></p>
 
       <a href="{{ '/cv/' | relative_url }}" class="section-cta">View my full CV &rarr;</a>
     </div>
@@ -226,17 +226,18 @@ social: true
 
   <div class="home-section">
     <h2>Research</h2>
-    <p>I am currently studying statistical learning theory, and singular learning theory in particular, for my following course project in Reinforcement Learning, "Phase Transitions in RL, a singular learning perspective". Currently I am in the learning phase and may change the exact topic based on the problem I chose to tackle for meaningful research. Look at my blog to see some of the cool mathematics connected to it! </p>
-  </p> I am also currently collaborating with Yufeng Zhao to understand deceptive models with unfaithful Chain of Thought, building upon my previous work: <a href="https://www.lesswrong.com/posts/EkuGSFCDQJr4qnXZK/uncovering-unfaithful-cot-in-deceptive-models-2" target="_blank" class="text-link">Uncovering Unfaithful CoT in Deceptive Models </a> </p>
+    <p>I am currently studying statistical learning theory, and Singular Learning Theory in particular, for my reinforcement learning course project: "Phase Transitions in RL, a singular learning perspective". I am currently in the exploratory phase and actively refining the exact problem I want to tackle for meaningful research. Check out my blog to see some of the cool mathematics connected to it!</p>
+    
+    <p>I am also collaborating with Yufeng Zhao to understand deceptive models with unfaithful Chain of Thought. This builds directly upon my recent independent research, <a href="https://www.lesswrong.com/posts/EkuGSFCDQJr4qnXZK/uncovering-unfaithful-cot-in-deceptive-models-2" target="_blank" class="text-link">Uncovering Unfaithful CoT in Deceptive Models</a>, which was featured on the front page of LessWrong.</p>
 
-    <p>I recently published independent research on <a href="https://www.lesswrong.com/" target="_blank" class="text-link">Uncovering Unfaithful CoT in Deceptive Models</a> which was featured on the front page of LessWrong. Currently, I am working through the ARENA curriculum to further sharpen my research engineering skills.</p>
+    <p>Currently, I am also going through ARENA and hosting a deep learning reading group to better refine my skills as an AI researcher and engineer.</p>
 
     <a href="{{ '/publications/' | relative_url }}" class="section-cta">View my publications &rarr;</a>
   </div>
 
   <div class="home-section">
     <h2>Blog</h2>
-    <p>This is the most interesting part of my universe! I document some of my notes here and share cool mathematics and other subjects that get me excited! Do check it ou!</p>
+    <p>This is the most interesting part of my universe! I document my notes here and share the cool mathematics and subjects that get me excited. Do check it out!</p>
 
     <a href="{{ '/blog/' | relative_url }}" class="section-cta">Read my blog &rarr;</a>
   </div>
