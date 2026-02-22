@@ -15,7 +15,7 @@ social: true
   <div class="hero-overlay"></div>
   
   <div class="hero-content">
-    <h1 class="hero-title">Welcome to my universe.</h1>
+    <h1 class="hero-title">Welcome to my universe</h1>
   </div>
 
   <div class="petal petal-1"></div>
@@ -33,19 +33,21 @@ social: true
 <style>
   .hero-universe {
     width: 100vw;
-    height: 75vh; /* Expands the canvas to show off the gorgeous HD art */
+    /* 1. THE HEIGHT FIX: Shrinks the image to exactly half the screen */
+    height: 50vh; 
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    margin-top: 0;
+    /* 2. THE GAP FIX: Pulls the image up to delete the white gap */
+    margin-top: -3rem; 
     margin-bottom: 4rem;
     
-    /* Pulls your downloaded HD image directly from your repository */
     background-image: url('{{ "/assets/img/sakura.jpg" | relative_url }}');
     background-size: cover;
-    background-position: center center;
+    /* Keeps the tree centered even though the box is shorter */
+    background-position: center center; 
     border-bottom: 1px solid rgba(0,0,0,0.1);
     overflow: hidden;
     display: flex;
@@ -58,7 +60,6 @@ social: true
     left: 0;
     width: 100%;
     height: 100%;
-    /* Smooth, elegant fade to protect the text */
     background: linear-gradient(to right, var(--global-bg-color) 0%, rgba(255,255,255,0.85) 25%, transparent 65%);
     z-index: 1;
   }
@@ -78,10 +79,9 @@ social: true
     font-weight: 800;
     color: var(--global-text-color);
     letter-spacing: -0.05rem;
-    text-shadow: 0px 4px 20px rgba(0,0,0,0.15); /* Gives the text a premium lift */
+    text-shadow: 0px 4px 20px rgba(0,0,0,0.15); 
   }
 
-  /* Calibrated Cinematic Petal Geometry */
   .petal {
     position: absolute;
     background: #ffb7c5;
@@ -90,19 +90,17 @@ social: true
     z-index: 6;
   }
 
-  /* Staggered, slow-motion drifting. 
-    Smaller sizes (8px-14px) and varied blurs create a 3D depth-of-field effect.
-  */
-  .petal-1 { width: 12px; height: 12px; animation: driftLeft 18s linear infinite; animation-delay: 0s; right: 10vw; bottom: 60vh; box-shadow: 0 0 4px rgba(255,183,197,0.8); }
-  .petal-2 { width: 14px; height: 14px; animation: driftLeft 22s linear infinite; animation-delay: 4s; right: -5vw; bottom: 40vh; background: #ff9eb5; filter: blur(1px); }
-  .petal-3 { width: 10px; height: 10px; animation: driftLeft 16s linear infinite; animation-delay: 7s; right: 15vw; bottom: 70vh; opacity: 0.7; }
-  .petal-4 { width: 8px; height: 8px; animation: driftLeft 25s linear infinite; animation-delay: 2s; right: 5vw; bottom: 25vh; filter: blur(2px); }
-  .petal-5 { width: 13px; height: 13px; animation: driftLeft 19s linear infinite; animation-delay: 11s; right: 20vw; bottom: 50vh; background: #ff9eb5; box-shadow: 0 0 6px rgba(255,183,197,0.9); }
-  .petal-6 { width: 15px; height: 15px; animation: driftLeft 21s linear infinite; animation-delay: 5s; right: -2vw; bottom: 35vh; }
-  .petal-7 { width: 11px; height: 11px; animation: driftLeft 17s linear infinite; animation-delay: 9s; right: 12vw; bottom: 80vh; filter: blur(1px); }
-  .petal-8 { width: 9px; height: 9px; animation: driftLeft 24s linear infinite; animation-delay: 14s; right: 18vw; bottom: 15vh; opacity: 0.6; }
-  .petal-9 { width: 14px; height: 14px; animation: driftLeft 20s linear infinite; animation-delay: 1s; right: 25vw; bottom: 45vh; box-shadow: 0 0 5px rgba(255,183,197,0.8); }
-  .petal-10{ width: 12px; height: 12px; animation: driftLeft 23s linear infinite; animation-delay: 13s; right: 8vw; bottom: 65vh; background: #ff9eb5; filter: blur(1px); }
+  /* 3. THE PETAL FIX: Recalibrated 'bottom' heights to stay under 50vh */
+  .petal-1 { width: 12px; height: 12px; animation: driftLeft 18s linear infinite; animation-delay: 0s; right: 10vw; bottom: 35vh; box-shadow: 0 0 4px rgba(255,183,197,0.8); }
+  .petal-2 { width: 14px; height: 14px; animation: driftLeft 22s linear infinite; animation-delay: 4s; right: -5vw; bottom: 20vh; background: #ff9eb5; filter: blur(1px); }
+  .petal-3 { width: 10px; height: 10px; animation: driftLeft 16s linear infinite; animation-delay: 7s; right: 15vw; bottom: 40vh; opacity: 0.7; }
+  .petal-4 { width: 8px; height: 8px; animation: driftLeft 25s linear infinite; animation-delay: 2s; right: 5vw; bottom: 10vh; filter: blur(2px); }
+  .petal-5 { width: 13px; height: 13px; animation: driftLeft 19s linear infinite; animation-delay: 11s; right: 20vw; bottom: 25vh; background: #ff9eb5; box-shadow: 0 0 6px rgba(255,183,197,0.9); }
+  .petal-6 { width: 15px; height: 15px; animation: driftLeft 21s linear infinite; animation-delay: 5s; right: -2vw; bottom: 15vh; }
+  .petal-7 { width: 11px; height: 11px; animation: driftLeft 17s linear infinite; animation-delay: 9s; right: 12vw; bottom: 45vh; filter: blur(1px); }
+  .petal-8 { width: 9px; height: 9px; animation: driftLeft 24s linear infinite; animation-delay: 14s; right: 18vw; bottom: 5vh; opacity: 0.6; }
+  .petal-9 { width: 14px; height: 14px; animation: driftLeft 20s linear infinite; animation-delay: 1s; right: 25vw; bottom: 30vh; box-shadow: 0 0 5px rgba(255,183,197,0.8); }
+  .petal-10{ width: 12px; height: 12px; animation: driftLeft 23s linear infinite; animation-delay: 13s; right: 8vw; bottom: 38vh; background: #ff9eb5; filter: blur(1px); }
 
   @keyframes driftLeft {
     0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
@@ -113,7 +111,7 @@ social: true
 
   @media (max-width: 768px) {
     .hero-title { font-size: 2.8rem; }
-    .hero-universe { height: 50vh; background-position: 70% center; }
+    .hero-universe { height: 40vh; margin-top: -2rem; background-position: 70% center; }
     .hero-overlay { background: linear-gradient(to right, var(--global-bg-color) 0%, rgba(255,255,255,0.9) 40%, transparent 100%); }
     [data-theme="dark"] .hero-overlay { background: linear-gradient(to right, var(--global-bg-color) 0%, rgba(30,30,30,0.9) 40%, transparent 100%); }
   }
