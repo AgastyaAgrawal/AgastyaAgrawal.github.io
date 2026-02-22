@@ -212,9 +212,9 @@ social: true
 
   <div class="profile-content home-section">
     <div class="profile-text">
-      <p>Hi, I'm Agastya. I am an undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank" class="text-link">Chennai Mathematical Institute (CMI)</a>, pursuing my bachelors in mathematics and computer science.</p> 
+      <p>Hi, Hi, I am Agastya Agrawal, a second year undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank" class="text-link">Chennai Mathematical Institute </a>, pursuing my bachelors in mathematics and computer science.</p> I am passionate about interpreting Artifical Intelligence for the progess towards safe superintelligence. I am also particularly interested in looking at neural networks from the lens of mathematics, and am in general also interested in other applications of Mathematics in understanding real-world structures. Please head to my blog or research section to learn more!
 
-      <p><em>I am actively seeking a summer 2026 research internship in machine learning and AI alignment.</em></p>
+      <p><em>I am open to collaboration over the above topics, so please feel free to reach out to me regarding anything related to it! I am also available to chat if you would like to discuss anything, so do not hesitate to contact me!</em></p>
 
       <a href="{{ '/cv/' | relative_url }}" class="section-cta">View my full CV &rarr;</a>
     </div>
@@ -226,7 +226,8 @@ social: true
 
   <div class="home-section">
     <h2>Research</h2>
-    <p>My research interests lie heavily in <strong>AI alignment</strong> and <strong>interpreting AI</strong>. I am currently focused on understanding deceptive chain-of-thought in fine-tuned language models—specifically using techniques like PCA and cosine similarity to find "truth directions" in activation spaces. Additionally, I am interested in the applications of probability and statistics in fields like ML and financial markets.</p>
+    <p>I am currently studying statistical learning theory, and singular learning theory in particular, for my following course project in Reinforcement Learning, "Phase Transitions in RL, a singular learning perspective". Currently I am in the learning phase and may change the exact topic based on the problem I chose to tackle for meaningful research. Look at my blog to see some of the cool mathematics connected to it! </p>
+  </p> I am also currently collaborating with Yufeng Zhao to understand deceptive models with unfaithful Chain of Thought, building upon my previous work: <a href="https://www.lesswrong.com/posts/EkuGSFCDQJr4qnXZK/uncovering-unfaithful-cot-in-deceptive-models-2" target="_blank" class="text-link">Uncovering Unfaithful CoT in Deceptive Models </a> </p>
 
     <p>I recently published independent research on <a href="https://www.lesswrong.com/" target="_blank" class="text-link">Uncovering Unfaithful CoT in Deceptive Models</a> which was featured on the front page of LessWrong. Currently, I am working through the ARENA curriculum to further sharpen my research engineering skills.</p>
 
@@ -235,7 +236,7 @@ social: true
 
   <div class="home-section">
     <h2>Blog</h2>
-    <p>I actively document my experiments, engineering deep-dives, and thoughts on AI alignment. This is where I share technical walkthroughs, notes from my ARENA curriculum progress, and raw ideas as they develop.</p>
+    <p>This is the most interesting part of my universe! I document some of my notes here and share cool mathematics and other subjects that get me excited! Do check it ou!</p>
 
     <a href="{{ '/blog/' | relative_url }}" class="section-cta">Read my blog &rarr;</a>
   </div>
