@@ -85,44 +85,36 @@ social: true
     100% { transform: translate(-85vw, 15vh) rotate(720deg); opacity: 0; }
   }
 
-  /* --- PROFILE & LAYOUT STYLES --- */
+  /* --- PROFILE & WIDE LAYOUT STYLES --- */
+  
+  /* Widen the container into the margins */
   .profile-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem; 
     margin-top: 2rem;
     margin-bottom: 2rem;
+    width: 124%;         /* Breaks out of standard width */
+    margin-left: -12%;   /* Shifts it left into the margin */
   }
 
-  /* Cherry Rose color for links */
-  .profile-content a {
-    color: #c94c6d; 
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-    font-weight: 500;
-  }
-  
-  .profile-content a:hover {
-    color: #a03b55;
-    text-decoration: underline;
+  .profile-text {
+    flex: 1.6; /* Gives the text portion more room so lines stay long */
   }
 
-  /* Custom highlight color */
-  .profile-content ::selection {
-    background: rgba(201, 76, 109, 0.3);
-  }
-
-  /* UPDATED: Centers the image horizontally in its column */
   .profile-pic-container {
+    flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-end; /* Pushes the image to the far right */
   }
 
-  /* UPDATED: Larger size, sharp corners, 4:3 aspect ratio */
   .profile-pic {
     width: 100%;
-    max-width: 500px; /* Greatly increased width for magnification */
-    aspect-ratio: 4 / 3; /* Professional landscape rectangle */
-    object-fit: cover; /* Crops intelligently to fill the box */
-    border-radius: 0; /* Sharp corners */
+    max-width: 480px; 
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0; 
     box-shadow: 0 8px 25px rgba(0,0,0,0.08); 
     transition: transform 0.3s ease;
   }
@@ -131,23 +123,44 @@ social: true
     transform: translateY(-5px);
   }
 
+  /* Cherry Rose color for links */
+  .profile-text a {
+    color: #c94c6d; 
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    font-weight: 500;
+  }
+  
+  .profile-text a:hover {
+    color: #a03b55;
+    text-decoration: underline;
+  }
+
+  .profile-text ::selection {
+    background: rgba(201, 76, 109, 0.3);
+  }
+
   .profile-text p {
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 1.2rem;
   }
 
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
+  /* Mobile & Tablet responsiveness (resets margins so it doesn't break small screens) */
+  @media (max-width: 992px) {
+    .profile-content {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+      gap: 2rem;
+    }
+    .profile-pic-container {
+      justify-content: center;
+    }
     .hero-title { font-size: 2.8rem; }
     .hero-universe { height: 40vh; margin-top: -2rem; background-position: 70% center; }
     .hero-overlay { background: linear-gradient(to right, var(--global-bg-color) 0%, rgba(255,255,255,0.9) 40%, transparent 100%); }
     [data-theme="dark"] .hero-overlay { background: linear-gradient(to right, var(--global-bg-color) 0%, rgba(30,30,30,0.9) 40%, transparent 100%); }
-    
-    .profile-pic-container {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-    }
   }
 </style>
 
@@ -170,10 +183,10 @@ social: true
   <div class="petal petal-10"></div>
 </div>
 
-<div class="row clearfix profile-content">
+<div class="profile-content">
   
-  <div class="col-sm-7 profile-text">
-    <p>Hi, I'm Agastya. I am an undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank">Chennai Mathematical Institute</a>, pursuing my bachelors in mathematics and computer science.</p> 
+  <div class="profile-text">
+    <p>Hi, I'm Agastya. I am an undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank">Chennai Mathematical Institute (CMI)</a>, pursuing my bachelors in mathematics and computer science.</p> 
 
     <p>My research interests lie heavily in <strong>AI alignment</strong> and <strong>interpreting AI</strong>. I am currently focused on understanding deceptive chain-of-thought in fine-tuned language models—specifically using techniques like PCA and cosine similarity to find "truth directions" in activation spaces. Additionally, I am interested in the applications of probability and statistics in fields like ML and financial markets.</p>
 
@@ -182,8 +195,8 @@ social: true
     <p><em>I am actively seeking a summer 2026 research internship in machine learning and AI alignment.</em></p>
   </div>
 
-  <div class="col-sm-5 profile-pic-container">
-    <img src="{{ '/assets/img/my_photo.jpg' | relative_url }}" alt="Agastya Agrawal" class="img-fluid profile-pic">
+  <div class="profile-pic-container">
+    <img src="{{ '/assets/img/my_photo.jpg' | relative_url }}" alt="Agastya Agrawal" class="profile-pic">
   </div>
   
 </div>
