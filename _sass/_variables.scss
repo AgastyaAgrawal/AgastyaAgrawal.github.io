@@ -18,10 +18,14 @@ $green-color-lime: #b7d12a !default;
 $green-color-dark: #009f06 !default;
 $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
-$purple-color: #b509ac !default;
+
+// --- UPDATED COLORS TO MATCH SAKURA THEME ---
+$purple-color: #c94c6d !default; // Replaced default purple with Cherry Rose
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
-$pink-color: #f92080 !default;
+$pink-color: #ffb7c5 !default; // Replaced default pink with Sakura Petal Pink
 $pink-color-light: #ffdddd !default;
+// --------------------------------------------
+
 $yellow-color: #efcc00 !default;
 
 $grey-color: #828282 !default;
@@ -33,7 +37,6 @@ $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
 // Theme colors
-
 $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
