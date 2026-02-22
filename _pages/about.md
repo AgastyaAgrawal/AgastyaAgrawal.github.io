@@ -9,44 +9,20 @@ social: true
 
 <style>
   header.post-header { display: none !important; }
-</style>
 
-<div class="hero-universe">
-  <div class="hero-overlay"></div>
-  
-  <div class="hero-content">
-    <h1 class="hero-title">Welcome to my universe</h1>
-  </div>
-
-  <div class="petal petal-1"></div>
-  <div class="petal petal-2"></div>
-  <div class="petal petal-3"></div>
-  <div class="petal petal-4"></div>
-  <div class="petal petal-5"></div>
-  <div class="petal petal-6"></div>
-  <div class="petal petal-7"></div>
-  <div class="petal petal-8"></div>
-  <div class="petal petal-9"></div>
-  <div class="petal petal-10"></div>
-</div>
-
-<style>
+  /* --- HERO SECTION STYLES --- */
   .hero-universe {
     width: 100vw;
-    /* 1. THE HEIGHT FIX: Shrinks the image to exactly half the screen */
     height: 50vh; 
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    /* 2. THE GAP FIX: Pulls the image up to delete the white gap */
     margin-top: -3rem; 
     margin-bottom: 4rem;
-    
     background-image: url('{{ "/assets/img/sakura.jpg" | relative_url }}');
     background-size: cover;
-    /* Keeps the tree centered even though the box is shorter */
     background-position: center center; 
     border-bottom: 1px solid rgba(0,0,0,0.1);
     overflow: hidden;
@@ -82,6 +58,7 @@ social: true
     text-shadow: 0px 4px 20px rgba(0,0,0,0.15); 
   }
 
+  /* --- PETAL ANIMATIONS --- */
   .petal {
     position: absolute;
     background: #ffb7c5;
@@ -90,7 +67,6 @@ social: true
     z-index: 6;
   }
 
-  /* 3. THE PETAL FIX: Recalibrated 'bottom' heights to stay under 50vh */
   .petal-1 { width: 12px; height: 12px; animation: driftLeft 18s linear infinite; animation-delay: 0s; right: 10vw; bottom: 35vh; box-shadow: 0 0 4px rgba(255,183,197,0.8); }
   .petal-2 { width: 14px; height: 14px; animation: driftLeft 22s linear infinite; animation-delay: 4s; right: -5vw; bottom: 20vh; background: #ff9eb5; filter: blur(1px); }
   .petal-3 { width: 10px; height: 10px; animation: driftLeft 16s linear infinite; animation-delay: 7s; right: 15vw; bottom: 40vh; opacity: 0.7; }
@@ -109,22 +85,99 @@ social: true
     100% { transform: translate(-85vw, 15vh) rotate(720deg); opacity: 0; }
   }
 
+  /* --- PROFILE & LAYOUT STYLES --- */
+  .profile-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Overrides default theme purple links to a cherry rose */
+  .profile-content a {
+    color: #c94c6d; 
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    font-weight: 500;
+  }
+  
+  .profile-content a:hover {
+    color: #a03b55;
+    text-decoration: underline;
+  }
+
+  /* Highlight text override so it matches your custom color */
+  .profile-content ::selection {
+    background: rgba(201, 76, 109, 0.3);
+  }
+
+  .profile-pic {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px; 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08); 
+    margin-top: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .profile-pic:hover {
+    transform: translateY(-5px);
+  }
+
+  .profile-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Mobile responsiveness */
   @media (max-width: 768px) {
     .hero-title { font-size: 2.8rem; }
     .hero-universe { height: 40vh; margin-top: -2rem; background-position: 70% center; }
     .hero-overlay { background: linear-gradient(to right, var(--global-bg-color) 0%, rgba(255,255,255,0.9) 40%, transparent 100%); }
     [data-theme="dark"] .hero-overlay { background: linear-gradient(to right, var(--global-bg-color) 0%, rgba(30,30,30,0.9) 40%, transparent 100%); }
+    
+    .profile-pic-container {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
   }
 </style>
 
-<div class="clearfix">
-  <p>Hi, I'm Agastya. I am an undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank">Chennai Mathematical Institute (CMI)</a>, specializing in mathematics and computer science.</p> 
+<div class="hero-universe">
+  <div class="hero-overlay"></div>
+  
+  <div class="hero-content">
+    <h1 class="hero-title">Welcome to my universe</h1>
+  </div>
 
-  <p>My research interests lie heavily in <strong>AI alignment</strong> and <strong>interpreting AI</strong>. I am currently focused on understanding deceptive chain-of-thought in fine-tuned language models—specifically using techniques like PCA and cosine similarity to find "truth directions" in activation spaces. Additionally, I am interested in the applications of probability and statistics in fields like ML and financial markets.</p>
-
-  <p>I recently published independent research on <a href="https://www.lesswrong.com/" target="_blank">Uncovering Unfaithful CoT in Deceptive Models</a> which was featured on the front page of LessWrong. Currently, I am working through the ARENA curriculum to further sharpen my research engineering skills.</p>
-
-  <p><em>I am actively seeking a summer 2026 research internship in machine learning and AI alignment.</em></p>
+  <div class="petal petal-1"></div>
+  <div class="petal petal-2"></div>
+  <div class="petal petal-3"></div>
+  <div class="petal petal-4"></div>
+  <div class="petal petal-5"></div>
+  <div class="petal petal-6"></div>
+  <div class="petal petal-7"></div>
+  <div class="petal petal-8"></div>
+  <div class="petal petal-9"></div>
+  <div class="petal petal-10"></div>
 </div>
 
+<div class="row clearfix profile-content">
+  
+  <div class="col-sm-8 profile-text">
+    <p>Hi, I'm Agastya. I am an undergraduate at the <a href="https://www.cmi.ac.in/" target="_blank">Chennai Mathematical Institute (CMI)</a>, specializing in mathematics and computer science.</p> 
 
+    <p>My research interests lie heavily in <strong>AI alignment</strong> and <strong>interpreting AI</strong>. I am currently focused on understanding deceptive chain-of-thought in fine-tuned language models—specifically using techniques like PCA and cosine similarity to find "truth directions" in activation spaces. Additionally, I am interested in the applications of probability and statistics in fields like ML and financial markets.</p>
+
+    <p>I recently published independent research on <a href="https://www.lesswrong.com/" target="_blank">Uncovering Unfaithful CoT in Deceptive Models</a> which was featured on the front page of LessWrong. Currently, I am working through the ARENA curriculum to further sharpen my research engineering skills.</p>
+
+    <p><em>I am actively seeking a summer 2026 research internship in machine learning and AI alignment.</em></p>
+  </div>
+
+  <div class="col-sm-4 profile-pic-container">
+    <img src="{{ '/assets/img/my_photo.jpg' | relative_url }}" alt="Agastya Agrawal" class="img-fluid profile-pic">
+  </div>
+  
+</div>
