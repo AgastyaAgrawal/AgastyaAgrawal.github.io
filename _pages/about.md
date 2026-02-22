@@ -109,14 +109,14 @@ social: true
     background: rgba(201, 76, 109, 0.3);
   }
 
-  .profile-pic {
+.profile-pic {
     width: 100%;
-    max-width: 320px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 12px; 
+    max-width: 380px; /* Made it a bit wider */
+    aspect-ratio: 4 / 3; /* Forces a landscape shape (width > height) */
+    object-fit: cover; /* Crops perfectly without distorting the image */
+    border-radius: 0; /* Sharp corners */
     box-shadow: 0 8px 25px rgba(0,0,0,0.08); 
-    margin-top: 0.5rem;
+    margin-top: 5px; /* Aligns the top of the image with the top of the text */
     transition: transform 0.3s ease;
   }
 
