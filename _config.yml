@@ -5,6 +5,13 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Agastya
 middle_name: 
 last_name: Agrawal
+
+# Contact information
+email: agastya.agr@gmail.com
+linkedin_userid: agastyaagrawal
+google_scholar_userid: ""
+rss_icon: false
+
 contact_note: >
   Feel free to reach out for any collaboration or research opportunities.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -276,8 +283,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Agrawal]
+  first_name: [Agastya, A.]
 
   style: apa
   locale: en
