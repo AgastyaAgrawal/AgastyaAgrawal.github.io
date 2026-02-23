@@ -441,6 +441,11 @@ ninja.data = [{
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-phase-transitions-in-rl",
+          title: 'Phase Transitions in RL',
+          description: "A statistical learning perspective on reinforcement learning.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_rl_phase/";
             },},{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
