@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-research",
+          title: "Research",
+          description: "Here is a collection of my independent publications, ongoing collaborations, and academic course projects focused on AI alignment and interpretability.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
         },{id: "nav-talks",
           title: "Talks",
           description: "",
