@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mathematical Introduction to Neural Networks"
-date: 2026-02-24
+date: 2026-02-10
 categories: [Machine Learning, AI Alignment, SLT]
 math: true
 ---
@@ -166,3 +166,11 @@ graph TD
     end
 ```
 *(In this visualization, $w_0$ represents the true parameters where $L=S$. A model might get "stuck" at the local minimum $u_0$, but $w_0$ is preferred by the free energy for realizable models.)*
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
