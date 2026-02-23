@@ -1,7 +1,8 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
+title: Blog
+description: I share interesting blogs here.
 nav: true
 nav_order: 2
 pagination:
@@ -12,8 +13,8 @@ pagination:
   sort_field: date
   sort_reverse: true
   trail:
-    before: 1 # The number of links before the current page
-    after: 3 # The number of links after the current page
+    before: 1
+    after: 3
 ---
 
 <div class="post">
