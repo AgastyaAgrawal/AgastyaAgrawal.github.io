@@ -216,7 +216,7 @@ social: true
 
       <p><em>I am always open to collaborations or discussions about these topics, so please don't hesitate to reach out!</em></p>
 
-      <a href="{{ '/cv/' | relative_url }}" class="section-cta">View my full CV &rarr;</a>
+      <a href="{{ '/cv/' | relative_url }}" class="section-cta">More About Me &rarr;</a>
     </div>
 
     <div class="profile-pic-container">
@@ -232,7 +232,7 @@ social: true
 
     <p>Currently, I am also going through ARENA and hosting a deep learning reading group to better refine my skills as an AI researcher and engineer.</p>
 
-    <a href="{{ '/publications/' | relative_url }}" class="section-cta">View my publications &rarr;</a>
+    <a href="{{ '/publications/' | relative_url }}" class="section-cta">More on my research &rarr;</a>
   </div>
 
   <div class="home-section">
