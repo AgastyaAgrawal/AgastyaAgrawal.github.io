@@ -216,7 +216,7 @@ social: true
 
       <p><em>I am always open to collaborations or discussions about these topics, so please don't hesitate to reach out!</em></p>
 
-      <a href="{{ '/cv/' | relative_url }}" class="section-cta">More About Me &rarr;</a>
+      <a href="{{ '/about-me/' | relative_url }}" class="section-cta">More about me &rarr;</a>
     </div>
 
     <div class="profile-pic-container">
@@ -232,7 +232,7 @@ social: true
 
     <p>Currently, I am also going through ARENA and hosting a deep learning reading group to better refine my skills as an AI researcher and engineer.</p>
 
-    <a href="{{ '/publications/' | relative_url }}" class="section-cta">More on my research &rarr;</a>
+    <a href="{{ '/research/' | relative_url }}" class="section-cta">More on my Research &rarr;</a>
   </div>
 
   <div class="home-section">
@@ -240,6 +240,13 @@ social: true
     <p>This is the most interesting part of my universe! I document my notes here and share the cool mathematics and subjects that get me excited. Do check it out!</p>
 
     <a href="{{ '/blog/' | relative_url }}" class="section-cta">Read my blog &rarr;</a>
+  </div>
+
+  <div class="home-section">
+    <h2>Talks</h2>
+    <p>I enjoy sharing my insights on AI alignment, mechanistic interpretability, and the mathematical foundations of machine learning. In this section, you can find slides, materials, and notes from my presentations, seminars, and reading groups.</p>
+
+    <a href="{{ '/talks/' | relative_url }}" class="section-cta">View my talks &rarr;</a>
   </div>
 
 </div>
