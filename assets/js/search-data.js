@@ -416,7 +416,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "projects-uncovering-unfaithful-cot-in-deceptive-models",
+          title: 'Uncovering Unfaithful CoT in Deceptive Models',
+          description: "Independent research featured on the front page of LessWrong.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_lesswrong/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
