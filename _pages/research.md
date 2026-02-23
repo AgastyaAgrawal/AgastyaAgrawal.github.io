@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: page
 title: Research
 permalink: /research/
 nav: true
@@ -8,4 +8,4 @@ display_categories: [Published, Ongoing, Coursework]
 horizontal: false
 ---
 
-Here is a collection of my independent publications, ongoing collaborations, and academic course projects focused on AI alignment and interpretability.
+Here is a collection of my independent publications, ongoing collaborations, and academic course projects focused on AI interpretability and machine learning. 
