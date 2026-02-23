@@ -244,13 +244,13 @@ social: true
 
 <div class="home-section">
     <h2>Talks</h2>
-    <p>I enjoy sharing my insights on AI alignment, mechanistic interpretability, mathematics, and the mathematical foundations of machine learning. Currently, I am hosting a Deep Learning Reading Group with <strong>TWIML</strong>.</p>
+    <p>I enjoy talking about mathematics and its applications, AI interpretability, and machine learning in general. Currently, I am hosting a Deep Learning Reading Group with <strong>TWIML</strong>.</p>
     
     <div class="card hoverable mt-4 mb-4" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.08); transition: transform 0.2s ease-in-out;">
       <div class="row no-gutters g-0">
         
         <div class="col-md-4">
-          <img src="{{ '/assets/img/sakura.jpg' | relative_url }}" alt="TWIML Reading Group" style="width: 100%; height: 100%; object-fit: cover; min-height: 200px;">
+          <img src="{{ '/assets/img/thumbnail_talk1.png' | relative_url }}" alt="TWIML Reading Group" style="width: 100%; height: 100%; object-fit: cover; min-height: 200px;">
         </div>
         
         <div class="col-md-8">
