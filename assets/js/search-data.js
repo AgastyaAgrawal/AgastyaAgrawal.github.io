@@ -416,7 +416,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "projects-uncovering-unfaithful-cot-in-deceptive-models",
+          title: 'Uncovering Unfaithful CoT in Deceptive Models',
+          description: "Independent research featured on the front page of LessWrong.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_lesswrong/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
@@ -426,6 +431,11 @@ ninja.data = [{
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-deceptive-models-amp-unfaithful-cot",
+          title: 'Deceptive Models &amp;amp; Unfaithful CoT',
+          description: "Ongoing collaboration with Yufeng Zhao to understand deceptive models using PCA and cosine similarity.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_yufeng_zhao/";
             },},{id: "projects-project-3-with-very-long-name",
           title: 'project 3 with very long name',
           description: "a project that redirects to another website",
