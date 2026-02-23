@@ -37,18 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-mathematical-introduction-to-neural-networks",
-        
-          title: "Mathematical Introduction to Neural Networks",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/mathintronn/";
-          
-        },
-      },{id: "post-welcome-to-my-universe",
+        },{id: "post-welcome-to-my-universe",
         
           title: "Welcome to my universe",
         
