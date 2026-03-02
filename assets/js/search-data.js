@@ -79,9 +79,9 @@ ninja.data = [{
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-deceptive-models-amp-unfaithful-cot",
-          title: 'Deceptive Models &amp;amp; Unfaithful CoT',
-          description: "Ongoing collaboration with Yufeng Zhao to understand deceptive models using PCA and cosine similarity.",
+            },},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_yufeng_zhao/";
             },},{id: "projects-project-3-with-very-long-name",
