@@ -79,9 +79,9 @@ ninja.data = [{
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-",
-          title: '',
-          description: "",
+            },},{id: "projects-reinforcement-learning-project",
+          title: 'Reinforcement Learning Project',
+          description: "2 experiments: I explore continuous state systems, and also compare Monte Carlo and TD in tabular systems.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_yufeng_zhao/";
             },},{id: "projects-project-3-with-very-long-name",
