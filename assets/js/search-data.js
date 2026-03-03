@@ -81,7 +81,7 @@ ninja.data = [{
               window.location.href = "/projects/2_project/";
             },},{id: "projects-reinforcement-learning-project",
           title: 'Reinforcement Learning Project',
-          description: "2 experiments: I explore continuous state systems, and also compare Monte Carlo and TD in tabular systems.",
+          description: "Analysis of continuous state systems and a comparison of Monte Carlo vs TD methods.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_yufeng_zhao/";
             },},{id: "projects-project-3-with-very-long-name",
