@@ -23,38 +23,38 @@ The following are the courses I have taken in my undergraduate years.
 
 ### Semester 1
 
-1) Functional Programming with Haskell
-2) Classical Mechanics 1
-3) Algebra 1 (Linear Algebra)
-4) Analysis 1 (Real Analysis and Metric Spaces)
-5) English
+1) Functional Programming with Haskell\
+2) Classical Mechanics 1\
+3) Algebra 1 (Linear Algebra)\
+4) Analysis 1 (Real Analysis and Metric Spaces)\
+5) English\
 
 ### Semester 2
 
-1) Advanced Programming with Python
-2) Discrete Mathematics (Some of my notes, not completed or verified: Notes(https://drive.google.com/file/d/1zuczNgRhXQKQW9MtqxDPpGYmD9dCow7D/view?usp=sharing))
-3) Calculus 1 (Multivariate Calculus - Differentiation)
-4) Algebra 2 (Group Theory)
-5) Probability Theory
-6) Introduction to Martingales (Graduate Elective)
+1) Advanced Programming with Python\
+2) Discrete Mathematics (Some of my notes, not completed or verified: [Notes](https://drive.google.com/file/d/1zuczNgRhXQKQW9MtqxDPpGYmD9dCow7D/view?usp=sharing))\
+3) Calculus 1 (Multivariate Calculus - Differentiation)\
+4) Algebra 2 (Group Theory)\
+5) Probability Theory\
+6) Introduction to Martingales (Graduate Elective)\
    
 ### Semester 3
 
-1) Analysis 2 (Metric Spaces)
-2) Calculus 2 (Multivariable Calculus - Integration and Differential Forms)
-3) Algebra 3 (Ring Theory and Field Theory)
-4) Design and Analysis of Algorithms
-5) Theory of Computation
+1) Analysis 2 (Metric Spaces)\
+2) Calculus 2 (Multivariable Calculus - Integration and Differential Forms)\
+3) Algebra 3 (Ring Theory and Field Theory)\
+4) Design and Analysis of Algorithms\
+5) Theory of Computation\
 
 ### Semester 4 (Ongoing)
 
-1) Reinforcement Learning
-2) Differential Equations
-3) Topology
-4) Programming Language Concepts
-5) Complex Analysis
+1) Reinforcement Learning\
+2) Differential Equations\
+3) Topology\
+4) Programming Language Concepts\
+5) Complex Analysis\
 
 ### Reading Projects Undertaken
 
-1) Probabilistic Measure Theory (Guidance: Prof. BV Rao)
-2) Introduction to Option Pricing using Martingales (Guidance: Prof. Rajeeva Karandikar)
+1) Probabilistic Measure Theory (Guidance: Prof. BV Rao)\
+2) Introduction to Option Pricing using Martingales (Guidance: Prof. Rajeeva Karandikar)\
