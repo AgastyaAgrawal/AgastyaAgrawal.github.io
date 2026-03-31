@@ -15,3 +15,5 @@ This needs to be update to add a few more things about the experiments and progr
 
 I am currently in the research phase, and prerequisities and other study is done. 
 
+Here are the slides for the talk (initial presentation for the project) given in CMI on March 31, 2026: [Slides](https://drive.google.com/file/d/1LMaOkLA2vMrlKtN-1K2FfjRuhY2-8xP0/view?usp=sharing)
+
