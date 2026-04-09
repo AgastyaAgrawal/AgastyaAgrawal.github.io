@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-welcome-to-my-universe",
+        },{id: "post-electrical-networks-and-random-walks",
+        
+          title: "Electrical Networks and Random Walks",
+        
+        description: "Today I will mainly talk about how to connect the notion of electrical networks and random walks. It gives a new perspective on an important and a very interesting subject in Probability and Statistics. I also solve an olympiad problem with it.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/electrical_walk/";
+          
+        },
+      },{id: "post-welcome-to-my-universe",
         
           title: "Welcome to my universe",
         
