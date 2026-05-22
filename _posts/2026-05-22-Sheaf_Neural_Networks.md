@@ -39,7 +39,7 @@ Here is how this global definition works for a simple graph, which just has edge
 
 It is easy to see how the definition generalizes to higher dimensional objects such as solids. 
 
-![Example Image](top_graph.png)
+![Example Image](/assets/img/top_graph.png)
 
 This defines a basis for a topology on a graph. It is easy to check why this is a basis. 
 
@@ -122,7 +122,7 @@ A $B$ - *presheaf* *(base presheaf)* is a presheaf where we care only about the 
 
 Now, we can easily define $B$ - *presheafs* on graphs. 
 
-![Example Image](B-presheaf.png)
+![Example Image](assets/img/B-presheaf.png)
 
 We can similarly define a $B$ - *sheaf*. It is a $B$ - *presheaf* satisfying the locality(uniqueness) and the gluing condition. 
 
