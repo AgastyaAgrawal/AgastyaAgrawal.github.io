@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-electrical-networks-and-random-walks",
+        },{id: "post-sheaf-neural-networks",
+        
+          title: "Sheaf Neural Networks",
+        
+        description: "I describe Sheaf Neural Networks in this blog, which are a type of Graph Neural Networks.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/Sheaf_Neural_Networks/";
+          
+        },
+      },{id: "post-electrical-networks-and-random-walks",
         
           title: "Electrical Networks and Random Walks",
         
