@@ -228,9 +228,9 @@ social: true
     <h2>Research</h2>
     <p>I am currently studying statistical learning theory, and Singular Learning Theory in particular, for my reinforcement learning course project: "Phase Transitions in RL, a singular learning perspective". I am currently in the exploratory phase and actively refining the exact problem I want to tackle for meaningful research. Check out my blog to see some of the cool mathematics connected to it!</p>
     
-    <p>I am also collaborating with Yufeng Zhao to understand deceptive models with unfaithful Chain of Thought. This builds directly upon my recent independent research, <a href="https://www.lesswrong.com/posts/EkuGSFCDQJr4qnXZK/uncovering-unfaithful-cot-in-deceptive-models-2" target="_blank" class="text-link">Uncovering Unfaithful CoT in Deceptive Models</a>, which was featured on the front page of LessWrong.</p>
+    <p>I am also collaborating to understand deceptive models with unfaithful Chain of Thought. This builds directly upon my recent independent research, <a href="https://www.lesswrong.com/posts/EkuGSFCDQJr4qnXZK/uncovering-unfaithful-cot-in-deceptive-models-2" target="_blank" class="text-link">Uncovering Unfaithful CoT in Deceptive Models</a>.</p>
 
-    <p>Currently, I am also going through ARENA and hosting a deep learning reading group to better refine my skills as an AI researcher and engineer.</p>
+    <p>Currently, I am also going through ARENA and hosting a deep learning reading group to better refine my skills as an AI researcher and engineer. This June, I attended the <a href="https://www.lesswrong.com/posts/moG6k8mJiGvH4zc8j/what-is-the-iliad-intensive" target="_blank" class="text-link">Iliad Intensive</a>, a month-long, mathematically rigorous course on foundational AI alignment, hosted at the <a href="https://www.safeai.org.uk/" target="_blank" class="text-link">London Initiative for Safe AI (LISA)</a>.</p>
 
     <a href="{{ '/research/' | relative_url }}" class="section-cta">More on my Research &rarr;</a>
   </div>
