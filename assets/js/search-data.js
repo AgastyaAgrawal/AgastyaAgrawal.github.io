@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-sheaf-neural-networks",
+        },{id: "post-the-kolmogorov-series-theorems",
+        
+          title: "The Kolmogorov Series Theorems",
+        
+        description: "The three Kolmogorov series theorems for almost-sure convergence of sums of independent random variables, the Strong Law of Large Numbers, and the 0-1 Law.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/kolmogorov-series-theorems/";
+          
+        },
+      },{id: "post-sheaf-neural-networks",
         
           title: "Sheaf Neural Networks",
         
