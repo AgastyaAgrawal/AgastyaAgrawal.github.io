@@ -7,6 +7,17 @@ tags: updates
 categories: general
 ---
 
-Hi, this material was prepared for a lecture to the participants of STEMS 2026, an annual training camp conducted by CMI students for outstanding high school and college students. 
+Hi, this material was prepared for a lecture to the participants of STEMS 2026, an annual training camp conducted by CMI students for outstanding high school and college students.
+
+<p>
+  <a
+    href="{{ '/assets/pdf/random_walks-4.pdf' | relative_url }}"
+    class="btn btn-sm z-depth-0"
+    role="button"
+    download
+  >
+    <i class="fa-solid fa-download"></i> Download PDF
+  </a>
+</p>
 
 <iframe src="{{ '/assets/pdf/random_walks-4.pdf' | relative_url }}" width="100%" height="800px" style="border:none;"></iframe>
