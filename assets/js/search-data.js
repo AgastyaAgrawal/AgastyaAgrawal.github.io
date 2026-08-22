@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-the-kolmogorov-series-theorems",
+        },{id: "post-making-sense-of-the-boomer-theory",
+        
+          title: "Making Sense of the Boomer Theory",
+        
+        description: "Classical statistical learning theory rebuilt from high-dimensional probability — concentration, chaining, symmetrization, and VC combinatorics.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/classical-learning-theory/";
+          
+        },
+      },{id: "post-the-kolmogorov-series-theorems",
         
           title: "The Kolmogorov Series Theorems",
         
