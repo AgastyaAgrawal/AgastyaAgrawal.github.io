@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quantum Computing, From the Postulates Up
+title: Quantum Computing
 date: 2026-09-17
 description: A descriptive tour of quantum computing — the four postulates, entanglement and its consequences, density operators, and the toy query algorithms from Deutsch to Simon.
 tags: quantum-computing information-theory
