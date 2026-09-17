@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-making-sense-of-the-boomer-theory",
+        },{id: "post-quantum-computing-from-the-postulates-up",
+        
+          title: "Quantum Computing, From the Postulates Up",
+        
+        description: "A descriptive tour of quantum computing — the four postulates, entanglement and its consequences, density operators, and the toy query algorithms from Deutsch to Simon.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/quantum-computing/";
+          
+        },
+      },{id: "post-making-sense-of-the-boomer-theory",
         
           title: "Making Sense of the Boomer Theory",
         
