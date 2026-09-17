@@ -37,9 +37,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-quantum-computing-from-the-postulates-up",
+        },{id: "post-quantum-computing",
         
-          title: "Quantum Computing, From the Postulates Up",
+          title: "Quantum Computing",
         
         description: "A descriptive tour of quantum computing — the four postulates, entanglement and its consequences, density operators, and the toy query algorithms from Deutsch to Simon.",
         section: "Posts",
