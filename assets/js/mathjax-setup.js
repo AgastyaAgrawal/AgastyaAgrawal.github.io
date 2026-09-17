@@ -1,6 +1,13 @@
 window.MathJax = {
   tex: {
     tags: "ams",
+    macros: {
+      ket: ["{\\left\\lvert #1 \\right\\rangle}", 1],
+      bra: ["{\\left\\langle #1 \\right\\rvert}", 1],
+      braket: ["{\\left\\langle #1 \\middle\\vert #2 \\right\\rangle}", 2],
+      ketbra: ["{\\left\\lvert #1 \\right\\rangle\\!\\left\\langle #2 \\right\\rvert}", 2],
+      Tr: "{\\operatorname{Tr}}",
+    },
     inlineMath: [
       ["$", "$"],
       ["\\(", "\\)"],
