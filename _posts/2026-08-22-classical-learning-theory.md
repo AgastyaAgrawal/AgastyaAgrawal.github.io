@@ -37,21 +37,21 @@ It happens that many of these problems are exactly the problems that the theory 
 
 ## On High-Dimensional Probability
 
-Through the historical development of probability theory, four phenomena were observed regularly, and the work of making them precise and quantitative led to applications in multiple areas, including machine learning — though one must point out that a good amount of work is still ongoing in some of them.
+Through the historical development of probability theory, four phenomena were observed regularly, and the work of making them precise and quantitative led to applications in multiple areas, including machine learning — though one must point out that a good amount of work is still ongoing in some of them. The four phenomena are:
 
-**1) Concentration.** Consider a sequence of independent (or sufficiently non-dependent) random variables $$X_1, \dots, X_n$$ and a function $$f(X_1, \dots, X_n)$$. If the function is not very "sensitive" to each of these coordinates, then $$f$$ is close to its mean.
+> **1. Concentration.** If $$X_1, \dots, X_n$$ are independent (or sufficiently non-dependent) and $$f(X_1, \dots, X_n)$$ is not too "sensitive" to any one coordinate, then $$f$$ is close to its mean.
 
-This is exactly the phenomenon we need for our concentration error bound, since the function $$f$$ does not change in that scenario. For generalization, we look at the next one.
+> **2. Suprema.** If a random process $$\{X_t\}_{t \in T}$$ is sufficiently close to its mean, then the magnitude of $$\sup_{t \in T} X_t$$ is controlled by the complexity of the index set $$T$$.
 
-**2) Suprema.** The boomer approach is to say that perhaps we can just get a bound for all functions uniformly — controlling the uniform deviations. The phenomenon is:
+> **3. Universality.** If $$X_1, \dots, X_n$$ are independent (or weakly dependent), then the distribution of $$f(X_1, \dots, X_n)$$ is insensitive to the distributions of the individual $$X_i$$.
 
-> If the random process $$\{X_t\}$$ is sufficiently close to its mean, then the magnitude of $$\sup_{t \in T} X_t$$ is controlled by the complexity of the index set $$T$$.
+> **4. Sharp transitions.** If $$X_1, \dots, X_n$$ are independent and a property of them is monotone, then its probability jumps from near $$0$$ to near $$1$$ over a narrow window of the parameters.
 
-This is where the notions of complexity used in machine learning come in.
+**Concentration** is exactly the phenomenon we need for our concentration error bound, since the function $$f$$ does not change in that scenario.
 
-**3) Universality.** We skip this for now.
+**Suprema** is what we need for generalization. The boomer approach is to say that perhaps we can just get a bound for all functions uniformly — controlling the uniform deviations. This is where the notions of complexity used in machine learning come in.
 
-**4) Sharp transitions.** We skip this for now.
+**Universality** and **sharp transitions** we skip for now, for learning the boomer theory.
 
 ## Concentration
 
