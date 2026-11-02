@@ -2,7 +2,7 @@
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 
-cv_pdf: https://drive.google.com/file/d/1octhI9baYSghTEv35dv09jqqzuoTku3W/view?usp=share_link # path to your CV PDF file
+cv_pdf: /assets/pdf/Agastya_Agrawal_Resume.pdf # path to your CV PDF file
 email: agastya.agr@gmail.com # your email address
 linkedin_username: agastyaagrawal # your LinkedIn username
 
