@@ -6,7 +6,7 @@ nav: true
 nav_order: 1
 ---
 
-Hi! I am Agastya Agrawal, a second-year undergraduate at the [Chennai Mathematical Institute (CMI)](https://www.cmi.ac.in/), pursuing my bachelor's in mathematics and computer science. I am passionate about interpreting artificial intelligence to help drive progress toward safe superintelligence. I particularly enjoy analyzing neural networks through a rigorous mathematical lens, and I am interested in applying mathematics, probability, and statistics to understand complex real-world structures. Please head to my blog or research section to learn more! You may also find my cv on the webpage for some brief histor
+Hi! I am Agastya Agrawal, a third-year undergraduate at the [Chennai Mathematical Institute (CMI)](https://www.cmi.ac.in/), pursuing my bachelor's in mathematics and computer science. I am passionate about interpreting artificial intelligence to help drive progress toward safe superintelligence. I particularly enjoy analyzing neural networks through a rigorous mathematical lens, and I am interested in applying mathematics, probability, and statistics to understand complex real-world structures. Please head to my blog or research section to learn more! You may also find my CV on the webpage for a brief history.
 
 I also occasionally record my coding sessions on [YouTube](https://youtube.com/@agastyaagrawal4688?si=aLVBVt2Gstl_qTco). Head there to check them out!
 
@@ -46,13 +46,22 @@ The following are the courses I have taken in my undergraduate years.
 4) Design and Analysis of Algorithms\
 5) Theory of Computation\
 
-### Semester 4 (Ongoing)
+### Semester 4
 
 1) Reinforcement Learning\
 2) Differential Equations\
 3) Topology\
 4) Programming Language Concepts\
 5) Complex Analysis\
+
+### Semester 5 (Ongoing)
+
+1) Quantum Computing ([Blog]({% post_url 2026-09-17-quantum-computing %}))\
+2) Foundations of Machine Learning ([Blog]({% post_url 2026-08-22-classical-learning-theory %}))\
+3) Mathematical Principles of Modern Machine Learning (Algorithmic Inductive Biases)\
+4) Introduction to Logic\
+5) Values Through Literature\
+6) Economics\
 
 ### Reading Projects Undertaken
 
