@@ -194,7 +194,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("https://drive.google.com/file/d/1octhI9baYSghTEv35dv09jqqzuoTku3W/view?usp=share_link", "_blank");
+          window.open("/assets/pdf/Agastya_Agrawal_Resume.pdf", "_blank");
         },
       },{
         id: 'social-email',
