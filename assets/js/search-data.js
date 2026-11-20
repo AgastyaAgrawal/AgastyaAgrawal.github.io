@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/talks/";
           },
-        },{id: "post-quantum-computing",
+        },{id: "post-an-optimal-data-dependent-stopping-rule-for-gradient-descent",
+        
+          title: "An Optimal Data dependent stopping rule for Gradient Descent",
+        
+        description: "Early stopping of kernel gradient descent as regularisation — the bias–variance computation, local Rademacher complexity, and the Raskutti–Wainwright–Yu stopping rule.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/early-stopping/";
+          
+        },
+      },{id: "post-quantum-computing",
         
           title: "Quantum Computing",
         
